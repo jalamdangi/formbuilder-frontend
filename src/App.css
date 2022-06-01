@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: sans-serif;
 }
 
 .container h4 {
@@ -12,7 +13,105 @@
   width: 100%;
   height: auto;
 }
-
-.round-btn {
-  /* border-radius: 50%; */
+i {
+  cursor: pointer;
 }
+.user-generated-form {
+  border-bottom: 2px solid red;
+  color: blue;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 25px;
+}
+#head-title {
+  padding: 20px;
+  font-size: 28px;
+  color: gray;
+}
+#search {
+  border: none;
+  background-color: whitesmoke;
+  outline: none;
+  padding: 10px;
+}
+#user-pic img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  width: 50px;
+  height: 50px;
+}
+#row1 {
+  background-color: white;
+}
+.row-2 {
+  background-color: whitesmoke;
+}
+.plus-icon {
+  font-size: 46px;
+}
+#newform-col {
+  padding: 20px;
+}
+.row-3 {
+  background-color: white;
+}
+#file-text {
+  font-size: 25px;
+}
+#plusbtn {
+  font-size: 46px;
+  color: #08c;
+  background-color: white;
+  padding: 30px;
+  cursor: pointer;
+}
+#formtitle {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  background-color: whitesmoke;
+  outline: none;
+}
+#formdescription {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  background-color: whitesmoke;
+  outline: none;
+}
+#form-add-question-field {
+  border: none;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+}
+#form-add-question-field::placeholder {
+  color: black;
+  font-size: 17px;
+}
+#form-add-answer-field {
+  border: none;
+  padding: 15px;
+  outline: none;
+  border-bottom: 2px solid gray;
+  width: 100%;
+}
+#form-select-answer-type-dropdown {
+  color: black;
+  background-color: white;
+  width: 30%;
+  padding: 17px;
+  border: none;
+  outline: none;
+}
+.add {
+  position: absolute;
+  top: 32%;
+  left: 91%;
+}
+#logout-btn {
+  margin-left: 28px; margin-top: 10px;
+}
+
