@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { Row, Col, Form, Input, Button, Checkbox } from 'antd'
+import image1 from '../images/image1.svg';
 
-const Signup = () => {
+  const Signup = () => {
   const navigate = useNavigate()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -19,22 +20,24 @@ const Signup = () => {
       },
     })
     result = await result.json()
-    // localStorage.setItem('user', JSON.stringify(result))
+    //  localStorage.setItem('user', JSON.stringify(result))
     // console.log(result)
     if (result) {
       navigate('/login')
     }
   }
   return (
-    <div style={{ display: 'flex', alignItems: 'center', height: '70vh' }}>
-      <div className="container bg-light p-4">
-      <h4 className='text-center'>User Registration Page</h4>
-        <Row>
-          <Col span={16} offset={2}>
+    <div className="container-fluid pt-5">
+      <div className="row">
+        <div className="col-md-6 border">
+          <img src={image1} alt="" />
+        </div>
+        <div className="col-md-6 border w-100">
+          <h4 className='text-center p-4'>User Registration Page</h4>
             <Form
               name="basic"
-              labelCol={{ span: 8 }}
-              wrapperCol={{ span: 16 }}
+              // labelCol={{ span: 8 }}
+              // wrapperCol={{ span: 16 }}
               initialValues={{ remember: true }}
               autoComplete="off"
             >
@@ -69,24 +72,13 @@ const Signup = () => {
               >
                 <Input.Password />
               </Form.Item>
-
-              <Form.Item
-                name="remember"
-                onChange={(e) => setPassword(e.target.value)}
-                valuePropName="checked"
-                wrapperCol={{ offset: 8, span: 16 }}
-              >
-                <Checkbox>Remember me</Checkbox>
-              </Form.Item>
-
-              <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                <Button type="primary" onClick={sendData} htmlType="submit">
-                  Submit
+              <Form.Item wrapperCol={{ offset: 3, span: 21 }}>
+                <Button type="primary" onClick={sendData} className='w-100' htmlType="submit">
+                  Register
                 </Button>
               </Form.Item>
             </Form>
-          </Col>
-        </Row>
+        </div>
       </div>
     </div>
   )

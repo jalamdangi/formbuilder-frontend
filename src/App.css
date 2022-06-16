@@ -4,11 +4,6 @@
   font-family: sans-serif;
 }
 
-.container h4 {
-  text-align: center;
-  padding: 20px;
-}
-
 .form-image {
   width: 100%;
   height: auto;
@@ -40,6 +35,7 @@ i {
   height: auto;
   width: 50px;
   height: 50px;
+  margin-right: 10px;
 }
 #row1 {
   background-color: white;
@@ -70,9 +66,11 @@ i {
   border: none;
   width: 100%;
   padding: 10px;
-  background-color: whitesmoke;
   outline: none;
+  font-size: 21px; 
 }
+#generated-form-title{text-transform: capitalize;}
+#formtitle::placeholder{font-size: 20px;}
 #formdescription {
   border: none;
   width: 100%;
@@ -89,7 +87,7 @@ i {
 }
 #form-add-question-field::placeholder {
   color: black;
-  font-size: 17px;
+  font-size: 17px; color: gray;
 }
 #form-add-answer-field {
   border: none;
@@ -111,7 +109,37 @@ i {
   top: 32%;
   left: 91%;
 }
+.plus {
+  position: absolute;
+  top: 24%;
+  left: 91%;
+}
 #logout-btn {
   margin-left: 28px; margin-top: 10px;
 }
+#form{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 10%; left: 30%;
+  background-color: whitesmoke; text-align: center;
+}
+#form input{width: 80%; margin-top: 15px; padding: 5px;}
+.remove-input-coloumn{
+  display: flex; justify-content: center; align-items: center; cursor: pointer;
+}
+.form-label{font-size: 18px; padding-top: 6px; text-transform: lowercase;}
+.form-label::first-letter{text-transform: capitalize;}
+.cptl-txt{text-transform: capitalize;}
+#link-box{
+  width: 40%; height: 40vh; position: absolute; background-color: whitesmoke;
+  top: 16%; left: 30%; display: flex; justify-content: center; 
+  text-align: center; flex-direction: column; font-size: 20px;
+}
+.update-ques-field{
+  border: none; outline: none; font-size: 21px; 
+}
 
+/* ant css */
+.ant-input{padding: 8px !important;}
+.ant-form-item-label{padding: 7px !important;}
